@@ -1,0 +1,8 @@
+varnish:
+  build: .
+  environment:
+    - VCL_CONFIG=/data/varnish/default.vcl
+  links:
+   - pageComposition:backend-host
+  ports:
+    - "80"
