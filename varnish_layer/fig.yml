@@ -1,8 +1,11 @@
+compositionLayer:
+  image: compositionlayer_compositionLayer
+
 varnish:
   build: .
   environment:
     - VCL_CONFIG=/data/varnish/default.vcl
   links:
-   - pageComposition:backend-host
+   - compositionLayer:'backend-host'
   ports:
     - "80"

@@ -1,28 +1,5 @@
-serviceOne:
+compositionLayer:
   build: .
-  environment:
-    - TYPE=service_one
-  command: rackup
-  ports:
-    - "9292"
-serviceTwo:
-  build: .
-  environment:
-    - TYPE=service_two
-  command: rackup
-  ports:
-    - "9292"
-serviceThree:
-  build: .
-  environment:
-    - TYPE=service_three
-  command: rackup
-  ports:
-    - "9292"
-serviceFour:
-  build: .
-  environment:
-    - TYPE=service_four
   command: rackup
   ports:
     - "9292"
